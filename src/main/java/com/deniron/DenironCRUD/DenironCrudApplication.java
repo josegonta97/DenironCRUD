@@ -2,6 +2,7 @@ package com.deniron.DenironCRUD;
 
 import com.deniron.DenironCRUD.model.Employee;
 import com.deniron.DenironCRUD.repository.EmployeeRepository;
+import com.deniron.DenironCRUD.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -17,6 +18,9 @@ public class DenironCrudApplication implements CommandLineRunner {
 	@Autowired
 	private EmployeeRepository employeeRepository;
 
+	@Autowired
+	private UserRepository userRepository;
+
 	@Override
 	public void run(String... args) throws Exception{
 		//Employee employee = new Employee();
@@ -24,7 +28,7 @@ public class DenironCrudApplication implements CommandLineRunner {
 		//employee.setLastName("Fadatare");
 		//employee.setEmailId("ramesh@gmail.com");
 		//employeeRepository.save(employee);
-//
+
 		//Employee employee1 = new Employee();
 		//employee1.setFirstName("John");
 		//employee1.setLastName("Cena");
