@@ -11,19 +11,21 @@ import lombok.Setter;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table(name = "employees")
-public class Employee {
+@Table(name = "axes")
+public class Axe {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
+    @Column(name = "level")
+    private int id;
 
-    @Column(name = "first_name")
-    private String firstName;
+    @Column(name = "hit_points")
+    private int hitPoints;
 
-    @Column(name = "last_name")
-    private String lastName;
+    @Column(name = "attack")
+    private int attack;
 
-    @Column(name = "email_id")
-    private String emailId;
+    @Column(name = "defense")
+    private int defense;
+
 }
